@@ -1,101 +1,113 @@
+import './HomePage.css';
+
 export function HomePage() {
     return (
         <>
-            <div class="scope product-cards | -fluid-text">
-                <div class="_card-list | grid" style="
-      --grid--fill-mode: var(--product-cards--fill-mode, auto-fill);
-      --grid--row-gap: var(--product-cards--gap, 1.5rem);
-      --grid--column-gap: var(--product-cards--gap, 1.5rem);
-      --grid--column-max-count: var(--product-cards--column-max-count, 4);
-      --grid--column-min-width: var(--product-cards--column-min-width, 20rem);">
+            <div className="scope product-cards | -fluid-text">
+                <div className="_card-list | grid" style={{
+                    '--grid--fill-mode': 'var(--product-cards--fill-mode, auto-fill)',
+                    '--grid--row-gap': 'var(--product-cards--gap, 1.5rem)',
+                    '--grid--column-gap': 'var(--product-cards--gap, 1.5rem)',
+                    '--grid--column-max-count': 'var(--product-cards--column-max-count, 4)',
+                    '--grid--column-min-width': 'var(--product-cards--column-min-width, 20rem)',
+                }}>
 
-                    <section class="_card">
-                        <h2 class="_heading | -fluid-text -trim-both" style="--fluid-text--min-font-size: 16;
-      --fluid-text--max-font-size: 24;">Product 01</h2>
-                        <div class="_thumbnail-stack">
-                            <img src="https://picsum.photos/id/100/1200/630" alt="" width="400" height="210" fetchpriority="high" />
-                            <img src="https://picsum.photos/id/100/1200/630" alt="" width="400" height="210" fetchpriority="high" />
+                    <section className="_card">
+                        <h2 className="_heading | -fluid-text -trim-both" style={{
+                            '--fluid-text--min-font-size': 16,
+                            '--fluid-text--max-font-size': 24,
+                        }}>Product 01</h2>
+                        <div className="_thumbnail-stack">
+                            <img src="https://picsum.photos/id/100/1200/630" alt="" width="400" height="210" fetchPriority="high" />
+                            <img src="https://picsum.photos/id/100/1200/630" alt="" width="400" height="210" fetchPriority="high" />
                         </div>
-                        <p class="_category | -trim-both">Category A</p>
-                        <p class="_price | -trim-both">&yen;2,000</p>
-                        <p class="_description | -line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <ul class="_tag-list | cluster" style="
-      --cluster--gap: 0.5rem;">
-                            <li class="_tag | -trim-both">Tag A</li>
-                            <li class="_tag | -trim-both">Tag B</li>
+                        <p className="_category | -trim-both">Project 1</p>
+                        <p className="_description | -line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <ul className="_tag-list | cluster" style={{'--cluster--gap': '0.5rem'}}>
+                            <li className="_tag | -trim-both">JavaScript</li>
+                            <li className="_tag | -trim-both">Python</li>
                         </ul>
-                        <div class="_button" style="--purchase-button--background: var(--_accent); --purchase-button--foreground: var(--_accent-contrast);">
-                            <a href="#" class="scope purchase-button">Add To Cart</a>
+                        <div className="_button" style={{'--purchase-button--background': 'var(--_accent)', '--purchase-button--foreground': 'var(--_accent-contrast)'}}>
+                            <a href="#" className="scope purchase-button">Visit</a>
                         </div>
                     </section>
 
-                    <section class="_card" style="--product-card--accent: #4e8397;">
-                        <h2 class="_heading | -fluid-text -trim-both" style="--fluid-text--min-font-size: 16;
-      --fluid-text--max-font-size: 24;">Product 02</h2>
-                        <div class="_thumbnail-stack">
-                            <img src="https://picsum.photos/id/101/1200/630" alt="" width="400" height="210" fetchpriority="high" />
-                            <img src="https://picsum.photos/id/101/1200/630" alt="" width="400" height="210" fetchpriority="high" />
+                    <section className="_card" style={{ '--product-card--accent': '#4e8397' }}>
+                        <h2 className="_heading | -fluid-text -trim-both" style={{
+  '--fluid-text--min-font-size': 16,
+  '--fluid-text--max-font-size': 24,
+}}>Product 02</h2>
+                        <div className="_thumbnail-stack">
+                            <img src="https://picsum.photos/id/101/1200/630" alt="" width="400" height="210" fetchPriority="high" />
+                            <img src="https://picsum.photos/id/101/1200/630" alt="" width="400" height="210" fetchPriority="high" />
                         </div>
-                        <p class="_category | -trim-both">Category B</p>
-                        <p class="_price | -trim-both">&yen;2,000</p>
-                        <p class="_description | -line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <ul class="_tag-list | cluster" style="
-      --cluster--gap: 0.5rem;">
-                            <li class="_tag | -trim-both">Tag A</li>
-                            <li class="_tag | -trim-both">Tag B</li>
+                        <p className="_category | -trim-both">Project 2</p>
+                        <p className="_description | -line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <ul className="_tag-list | cluster" style={{'--cluster--gap': '0.5rem'}}>
+                            <li className="_tag | -trim-both">Reactjs</li>
+                            <li className="_tag | -trim-both">JavaScript</li>
                         </ul>
-                        <div class="_button" style="--purchase-button--background: var(--_accent); --purchase-button--foreground: var(--_accent-contrast);">
-                            <a href="#" class="scope purchase-button">Add To Cart</a>
+                        <div className="_button" style={{
+  '--purchase-button--background': 'var(--_accent)',
+  '--purchase-button--foreground': 'var(--_accent-contrast)',
+}}>
+                            <a href="#" className="scope purchase-button">Visit</a>
                         </div>
                     </section>
 
-                    <section class="_card" style="--product-card--accent: #ff8066;">
-                        <h2 class="_heading | -fluid-text -trim-both" style="--fluid-text--min-font-size: 16;
-      --fluid-text--max-font-size: 24;">Product 03</h2>
-                        <div class="_thumbnail-stack">
-                            <img src="https://picsum.photos/id/102/1200/630" alt="" width="400" height="210" fetchpriority="high" />
-                            <img src="https://picsum.photos/id/102/1200/630" alt="" width="400" height="210" fetchpriority="high" />
+                    <section className="_card" style={{ '--product-card--accent': '#ff8066' }}>
+                        <h2 className="_heading | -fluid-text -trim-both" style={{
+  '--fluid-text--min-font-size': 16,
+  '--fluid-text--max-font-size': 24,
+}}>Product 03</h2>
+                        <div className="_thumbnail-stack">
+                            <img src="https://picsum.photos/id/102/1200/630" alt="" width="400" height="210" fetchPriority="high" />
+                            <img src="https://picsum.photos/id/102/1200/630" alt="" width="400" height="210" fetchPriority="high" />
                         </div>
-                        <p class="_category | -trim-both">Category C</p>
-                        <p class="_price | -trim-both">&yen;2,000</p>
-                        <p class="_description | -line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <ul class="_tag-list | cluster" style="
-      --cluster--gap: 0.5rem;">
-                            <li class="_tag | -trim-both">Tag A</li>
-                            <li class="_tag | -trim-both">Tag B</li>
-                            <li class="_tag | -trim-both">Tag C</li>
+                        <p className="_category | -trim-both">Project 3</p>
+                        <p className="_description | -line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <ul className="_tag-list | cluster" style={{ '--cluster--gap': '0.5rem' }}>
+                            <li className="_tag | -trim-both">JavaScript</li>
+                            <li className="_tag | -trim-both">Nodejs</li>
+                            <li className="_tag | -trim-both">Python</li>
                         </ul>
-                        <div class="_button" style="--purchase-button--background: var(--_accent); --purchase-button--foreground: var(--_accent-contrast);">
-                            <a href="#" class="scope purchase-button">Add To Cart</a>
+                        <div className="_button" style={{
+  '--purchase-button--background': 'var(--_accent)',
+  '--purchase-button--foreground': 'var(--_accent-contrast)',
+}}>
+                            <a href="#" className="scope purchase-button">Visit</a>
                         </div>
                     </section>
 
-                    <section class="_card" style="--product-card--accent: #008bc9;">
-                        <h2 class="_heading | -fluid-text -trim-both" style="--fluid-text--min-font-size: 16;
-      --fluid-text--max-font-size: 24;">Product 04</h2>
-                        <div class="_thumbnail-stack">
-                            <img src="https://picsum.photos/id/103/1200/630" alt="" width="400" height="210" fetchpriority="high" />
-                            <img src="https://picsum.photos/id/103/1200/630" alt="" width="400" height="210" fetchpriority="high" />
+                    <section className="_card" style={{ '--product-card--accent': '#008bc9' }}>
+                        <h2 className="_heading | -fluid-text -trim-both" style={{
+  '--fluid-text--min-font-size': 16,
+  '--fluid-text--max-font-size': 24,
+}}>Product 04</h2>
+                        <div className="_thumbnail-stack">
+                            <img src="https://picsum.photos/id/103/1200/630" alt="" width="400" height="210" fetchPriority="high" />
+                            <img src="https://picsum.photos/id/103/1200/630" alt="" width="400" height="210" fetchPriority="high" />
                         </div>
-                        <p class="_category | -trim-both">Category D</p>
-                        <p class="_price | -trim-both">&yen;2,000</p>
-                        <p class="_description | -line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                        <ul class="_tag-list | cluster" style="
-      --cluster--gap: 0.5rem;">
-                            <li class="_tag | -trim-both">Tag A</li>
-                            <li class="_tag | -trim-both">Tag B</li>
-                            <li class="_tag | -trim-both">Tag C</li>
-                            <li class="_tag | -trim-both">Tag D</li>
+                        <p className="_category | -trim-both">Project 4</p>
+                        <p className="_description | -line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <ul className="_tag-list | cluster" style={{ '--cluster--gap': '0.5rem' }}>
+                            <li className="_tag | -trim-both">JavaScript</li>
+                            <li className="_tag | -trim-both">Reactjs</li>
+                            <li className="_tag | -trim-both">Nodejs</li>
+                            <li className="_tag | -trim-both">Python</li>
                         </ul>
-                        <div class="_button" style="--purchase-button--background: var(--_accent); --purchase-button--foreground: var(--_accent-contrast);">
-                            <a href="#" class="scope purchase-button">Add To Cart</a>
+                        <div className="_button" style={{
+  '--purchase-button--background': 'var(--_accent)',
+  '--purchase-button--foreground': 'var(--_accent-contrast)',
+}}>
+                            <a href="#" className="scope purchase-button">Visit</a>
                         </div>
                     </section>
 
                 </div>
 
-                
-                <svg width="0" height="0" style="visibility: hidden; position: fixed;">
+
+                <svg width="0" height="0" style={{ visibility: 'hidden', position: 'fixed' }}>
                     <filter id="svg-inset-shadow">
                         <feOffset in="SourceAlpha" dx="6" dy="8" />
                         <feGaussianBlur in="SourceAlpha" stdDeviation="8" />

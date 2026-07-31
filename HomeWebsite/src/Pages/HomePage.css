@@ -76,11 +76,6 @@
         grid-column: --heading;
         align-self: center;
       }
-
-      & > ._price {
-        grid-column: --price;
-        place-self: center end;
-      }
     }
 
     ._thumbnail-stack {
@@ -204,19 +199,6 @@
       transition-property: background-color, color;
       transition-duration: 300ms;
 
-      &::before {
-        content: "";
-        flex: 0 0 1em;
-        mask-image: var(--icon-cart);
-        mask-repeat: no-repeat;
-        mask-position: center;
-        mask-size: contain;
-        aspect-ratio: 1;
-        background-color: CanvasText; /* for Forced Colors Mode */
-        background-image: conic-gradient(
-          currentcolor 0 0
-        ); /* for Forced Colors Mode */
-      }
 
       &:any-link:hover {
         @media (any-hover) {
