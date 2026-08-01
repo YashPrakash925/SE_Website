@@ -144,7 +144,6 @@
           circle at 100% 100%,
           transparent var(--_category-radius),
           red calc(var(--_category-radius) + 1px)
-            /* ギザギザを防止するために 1px 加える */
         );
         background-color: inherit;
       }
